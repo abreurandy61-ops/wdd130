@@ -41,3 +41,8 @@ nav a {
     padding: 10px;
     display: block;
 }
+
+nav {
+    background-color: steelblue;
+    padding: 10px;
+}
