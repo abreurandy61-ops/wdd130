@@ -1,11 +1,10 @@
 :root {
-    --primary-color: #0a3d62;
-    --secondary-color: #3c6382;
-    --accent1-color: #1e3799;
-    --accent2-color: #82ccdd;
-
-    --heading-font: Arial, Helvetica, sans-serif;
-    --body-font: Verdana, Geneva, sans-serif;
+    --primary-color: #055a05;
+    --secondary-color: #f4a261;
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -19,7 +18,11 @@ body {
     color: var(--accent1-color);
 }
 
-header,
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color)
+}
+
 main,
 footer {
     width: 840px;
