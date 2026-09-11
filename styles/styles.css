@@ -86,7 +86,7 @@ p {
 footer {
     margin-top: 1em;
     border-top: 1px solid #000;
-    text-align: var(--text-align);
+    text-align: center;
 }
 
 .grid {
