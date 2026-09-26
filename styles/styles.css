@@ -19,7 +19,6 @@ footer,
 }
 
 main {
-    max-width: 840px;
     grid-column: 2/3;
     margin: 1rem;
 }
@@ -43,7 +42,9 @@ nav a {
 
 h1 {
     color: var(--h1_color);
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid #000;
+    text-align: center;
+    padding: 1rem 0;
 }
 
 main img {
@@ -80,18 +81,20 @@ aside h2 {
 }
 
 p {
-    padding: 0;
+    padding: 0.5rem 0;
 }
 
 footer {
     margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
+    padding: 1rem 0;
 }
 
 .grid {
     display: grid;
     align-items: center;
+    grid-template-columns: 20rem auto;
 }
 
 /* Class selector */
