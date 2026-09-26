@@ -18,7 +18,6 @@ body {
     color: var(--accent1-color);
 }
 
-/* Limit width for header/footer, allow main to expand */
 header,
 footer {
     max-width: 840px;
@@ -76,7 +75,7 @@ section {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.85; /* bumped for readability */
+    opacity: 0.85;
     background-color: var(--accent1-color);
     color: #fff;
 }
@@ -152,4 +151,68 @@ section {
     padding: 2rem 1rem;
 }
 
-.ad
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.adventure-gallery figure {
+    margin: 0;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    max-width: 180px;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.adventure-gallery figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* ---------------- Footer ---------------- */
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+.socialmedia {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialmedia img {
+    width: 28px;
+}
+
+/* ---------------- Responsive Tweaks ---------------- */
+
+@media (max-width: 768px) {
+    .history-content {
+        grid-template-columns: 1fr;
+    }
+
+    .adventure-gallery {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero article {
+        max-width: 90%;
+        left: 5%;
+    }
+}
